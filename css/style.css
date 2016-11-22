@@ -127,7 +127,6 @@ li a:hover:not(.active) {
     color: #FA8072;
 }
 
-ul.topnav li.icon {display: none;}
 
 h2 {
 	font-family: 'Avenir';
@@ -142,30 +141,6 @@ h3 {
 	margin-top: 60px;
 }
 
-@media screen and (max-width:680px) {
-  ul.topnav li:not(:first-child) {display: none;}
-  ul.topnav li.icon {
-    float: right;
-    display: inline-block;
-  }
-}
-
-@media screen and (max-width:680px) {
-  ul.topnav.responsive {position: relative;}
-  ul.topnav.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  ul.topnav.responsive li {
-    float: none;
-    display: inline;
-  }
-  ul.topnav.responsive li a {
-    display: block;
-    text-align: left;
-  }
-}
 
 /*--------------------------------- Burger menu ----------------------------------*/
 
