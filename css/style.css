@@ -1,0 +1,796 @@
+body, html {
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	width: 95%;
+	margin: 0 auto;
+	padding-top: 50px;
+	padding-bottom: 60px;
+}
+
+.left{
+	width: 30%;
+	height: 600px;
+	display: block;
+	float: left;
+	background-image: url(../img/marble.png);
+	background-position: center;
+	background-size: 100%;
+	padding: 20px;
+}
+
+
+.right{
+	width: 65%;
+	height: 550px;
+	float: left;
+	display: block;
+}
+
+.block { 
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid black;
+}
+
+.videos1 {
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+}
+
+
+.right a {
+	float: right;
+	font-family: 'Avenir';
+	font-weight: bold;
+	text-decoration: none;
+	color: #000;
+	margin-right: 50px;
+	margin-top: 30px;
+}
+.right a:hover {
+    color: #FA8072;
+}
+
+
+.img1{
+	width: 80%;
+	display: block;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+
+.left p {
+	margin-top: 100px;
+	font-size: 16px;
+	font-family: 'Avenir';
+	text-align: center;
+}
+
+.image {
+	width: 600px;
+	margin: 0 auto;
+}
+
+
+.logo {
+	width: 80%;
+}
+
+nav {
+	margin-top: 20px;
+}
+
+.f-nav{
+	width: 90%;
+	height: 70px;
+	position: fixed;
+	top: 0;
+	background-color: #fff;
+	z-index: 2000;
+	margin-top: 0px;
+	text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 450px;
+    margin:0 auto;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Avenir';
+    font-weight: bold;
+}
+
+li a:hover:not(.active) {
+    background-color: #c9c8c7;
+}
+
+.active {
+    color: #FA8072;
+}
+
+ul.topnav li.icon {display: none;}
+
+h2 {
+	font-family: 'Avenir';
+	font-weight: bold;
+	text-align: center;
+	margin-top: 100px;
+}
+h3 {
+	font-family: 'Avenir';
+	font-weight: bold;
+	text-align: center;
+	margin-top: 60px;
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+/*--------------------------------- Burger menu ----------------------------------*/
+
+
+.container2 {
+    display: inline-block;
+    cursor: pointer;
+    display: none;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+
+
+
+
+/* --------------------------------------- About -------------------------------- */
+
+.about {
+	width: 90%;
+	height: 400px;
+	border: 1px solid  black;
+	margin: 0 auto;
+
+}
+
+
+
+/* --------------------------------------- Grid -------------------------------- */
+
+.grid {
+	margin-top: 100px;
+}
+
+.grid ul {
+	width: 90%; 
+}
+
+
+.rig {
+    max-width:100%;
+    margin:0 auto; /*center aligned*/
+    padding:0;
+    font-size:0; /* Remember to change it back to normal font size if have captions */
+    list-style:none;
+}
+
+.rig li {
+    display: inline-block;
+    *display:inline;/*for IE6 - IE7*/
+    width:30%;
+    vertical-align:middle;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+        
+/* The wrapper for each item */
+.rig-cell {
+    /*margin:12px;
+    box-shadow:0 0 6px rgba(0,0,0,0.3);*/
+    display:block;
+    position: relative;
+    overflow:hidden;
+}
+        
+/* If have the image layer */
+.rig-img {
+    display:block;
+    width: 100%;
+    height: auto;
+    border:none;
+    transform:scale(1);
+    transition:all 1s;
+}
+
+#rig li:hover .rig-img {
+    transform:scale(1.05);
+}
+        
+/* If have the overlay layer */
+.rig-overlay {
+    position: absolute;
+    display:block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: #000 no-repeat center 20%;
+    background-size:50px 50px;
+    opacity:0;
+    filter:alpha(opacity=0);/*For IE6 - IE8*/
+    transition:all 0.6s;
+}
+
+#rig li:hover .rig-overlay {
+    opacity:0.8;
+}
+
+/* If have captions */
+.rig-text {
+    display:block;
+    padding:0 30px;
+    box-sizing:border-box;
+    position:absolute;
+    left:0;
+    width:100%;
+    text-align:center;
+    text-transform:capitalize;
+    font-size:18px;
+    font-weight:bold;
+    font-family: 'Avenir';
+    font-weight:normal!important;
+    top:40%;
+    color:#fff;
+    opacity:0;
+    filter:alpha(opacity=0);/*For older IE*/
+    transform:translateY(-20px);
+    transition:all .3s;
+}
+
+#rig li:hover .rig-text {
+    transform:translateY(0px);
+    opacity:0.9;
+}
+
+
+@media (max-width: 9000px) {
+    #rig li {
+        width:33%;
+    }
+}
+
+@media (max-width: 700px) {
+    #rig li {
+        width:33.33%;
+    }
+}
+
+@media (max-width: 550px) {
+    #rig li {
+        width:50%;
+    }
+}
+
+
+.img2{
+	display: none;
+}
+
+.img2:hover{
+	display: none;
+}
+
+/* --------------------------------------- Showreel -------------------------------- */
+.showreel {
+	width: 90%;
+	margin: 0 auto;
+
+}
+
+.videos {
+	width: 90%;
+	margin: 0 auto;
+	display: block;
+}
+
+
+/* --------------------------------------- Contact -------------------------------- */
+
+.contact {
+	width: 100%;
+	margin: 0 auto;
+	background-color: #FA8072;
+
+}
+
+.beh {
+	width: 40%;
+	float: left;
+	display: block;
+	color: #fff;
+	padding: 10px;
+	margin-top:  100px;
+	font-family: 'Avenir';
+	font-weight: bold;
+}
+
+.block {
+	width: 200px;
+	padding: 10px;
+	background-color: #000;
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.beh i {
+	color: #fff;
+}
+
+.beh i:hover {
+	color: #ccc;
+}
+
+/* Form section */
+	form{
+		width: 40%;
+		display: block;
+		text-align: center;
+		font-family: 'Avenir';
+		font-weight: bold;
+		padding: 40px;
+		float: left;
+	}
+	h5 {
+		font-family: 'Avenir';
+		font-weight: bold;
+		font-size: 20px;
+		float: left;
+	}
+
+	form input{
+		width: 100%;
+		height: 30px;
+		float: right;
+		display: block;
+		background-color: #fff;
+		border-radius: 5px;
+		border: 0;
+		margin-bottom: 10px;
+		font-size: 13px;
+	}
+ 	
+ 	form input.comment{
+		width: 100%;
+		height: 100px;
+		float: right;
+		margin-bottom: 10px;
+		display: block;
+		background-color: #fff;
+	}
+
+
+	.submit{
+		width: 100px;
+		height: 50px;
+		background-color: #000;
+		color: #fff;
+		border-radius: 5px;
+		border: 0;
+		float: right;
+	}
+
+	.submit:hover{
+		background-color: #fff;
+		color: #000;
+	}
+
+
+.fix{
+	clear: both;
+}
+
+
+	/* -------------------------------- Back to top button ------------------------------------*/
+
+.back-to-top {
+	position: fixed;
+	bottom: 2em;
+	right: 20px;
+	text-decoration: none;
+	color: #000000;
+	background-color: #fff;
+	border:1px solid black;
+	font-size: 12px;
+	padding: 1em;
+	display: none;
+	font-family: 'Avenir';
+	font-weight: bold;
+}		
+
+.back-to-top:hover {	
+	background-color: #000;
+	border: 0;
+	color: #fff;
+}
+
+
+
+footer {
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #000;
+	text-align: center;
+	font-family: 'Avenir';
+	background-color: #fff;
+
+}
+
+/*--------------------EKSTRA MEDIA QUERIE VIR LAPTOP 1 (1471-1671) ---------------------------------------*/
+/* Laptop ekstra 1*/
+@media only screen and (min-width: 1471px) and (max-width: 1671px) {
+
+
+}/* Laptop ekstra 1 media query close*/
+
+
+
+/*--------------------EKSTRA MEDIA QUERIE VIR LAPTOP 2 (1672-1876) ---------------------------------------*/
+/* Laptop ekstra 1*/
+@media only screen and (min-width: 1672px) and (max-width: 1876px) {
+
+
+
+}/* Laptop ekstra 2 media query close*/
+
+
+
+/*--------------------EKSTRA MEDIA QUERIE VIR LAPTOP 3 (1877-1879) ---------------------------------------*/
+/* Laptop ekstra 1*/
+@media only screen and (min-width: 1877px) and (max-width: 1879px) {
+
+
+
+
+
+}/* Laptop ekstra 3 media query close*/
+
+
+
+/*  ---------------------------------- Net voor imac media query 1880-1919 ---------------------------------- */
+
+@media only screen and (min-width: 1880px) and (max-width: 1919px){
+
+
+}/* Net voor imac media query close */
+
+
+
+
+/*  ---------------------------------- Media Queries ---------------------------------- */
+/*  ---------------------------------- Imac 1920 x 1080 ---------------------------------- */
+
+@media only screen and (min-width: 1920px) and (max-width: 2080px){
+
+
+}/* Close Imac Media Query */
+
+
+
+
+/*  ---------------------------------- Smartphones ---------------------------------- */
+
+/* Iphone 4, 5 */
+
+@media only screen and (min-width: 320px) and (max-width: 359px){
+
+ 		/* home page */
+	
+		.image {
+			width: 200px;
+			margin: 0 auto;
+		}
+
+
+		.logo {
+			width: 80%;
+		}
+
+
+		.container2 {
+		    display: inline-block;
+		    cursor: pointer;
+		}
+
+	footer {
+		display: none;
+	}
+
+
+
+} /* Iphone 4, 5 media query close */
+
+
+
+
+
+
+/* Samsung Galaxy S */
+
+@media only screen and (min-width: 360px) and (max-width: 374px){
+
+
+ 		/* home page */
+		.image {
+			width: 200px;
+			margin: 0 auto;
+		}
+
+
+		.logo {
+			width: 80%;
+		}
+
+
+	footer {
+		display: none;
+	}
+
+
+
+} /* Samsung Galaxy S media query close */
+
+
+
+
+
+/* Iphone 6 */
+
+@media only screen and (min-width: 375px) and (max-width: 413px){
+
+
+ 		/* home page */
+		.image {
+			width: 200px;
+			margin: 0 auto;
+		}
+
+
+		.logo {
+			width: 80%;
+		}
+
+
+	footer {
+		display: none;
+	}
+
+
+
+
+} /* Iphone 6 media query close */
+
+
+
+
+
+/* Iphone 6 Plus */
+
+@media only screen and (min-width: 414px) and (max-width: 450px){
+
+
+ 		/* home page */
+		.image {
+			width: 200px;
+			margin: 0 auto;
+		}
+
+
+		.logo {
+			width: 80%;
+		}
+
+	
+	footer {
+		display: none;
+	}
+
+
+
+
+} /* Iphone 6 Plus media query close */
+
+
+
+
+
+/* Iphone 6 Plus Landscape */
+
+@media only screen and (min-width: 600px) and (max-width: 737px){
+
+
+ 		/* home page */
+		.image {
+			width: 400px;
+			margin: 0 auto;
+		}
+
+
+		.logo {
+			width: 80%;
+		}
+
+
+	
+	footer {
+		display: none;
+	}
+
+
+
+
+} /* Iphone 6 Plus Landscape media query close */
+
+
+
+/*  ---------------------------------- Media Queries ---------------------------------- */
+
+/*  ---------------------------------- Tablet ---------------------------------- */
+
+/* Ipad Portrait */
+@media only screen and (min-width: 768px) and (max-width: 799px){
+
+	/* home page */
+		.image {
+			width: 400px;
+			margin: 0 auto;
+		}
+
+
+		.logo {
+			width: 80%;
+		}
+
+
+
+
+}/* Ipad Portrait media query close */
+
+
+
+
+/* Google Nexus 10 */
+@media only screen and (min-width: 800px) and (max-width: 1023px){
+
+
+ 		/* home page */
+		.image {
+			width: 600px;
+			margin: 0 auto;
+		}
+
+
+		.logo {
+			width: 80%;
+		}
+
+	
+
+
+
+
+} /* Google Nexus 10 media query close */
+
+
+
+	
+/* Apple Ipad Landscape  */
+@media only screen and (min-width: 1024px) and (max-width: 1279px){
+
+
+ 		/* home page */
+		.image {
+			width: 600px;
+			margin: 0 auto;
+		}
+
+
+		.logo {
+			width: 80%;
+		}
+
+
+
+
+
+} /* Ipad Landscape media query close */
+
+
+
+
+/*  ---------------------------------- Media Queries ---------------------------------- */
+/*  ---------------------------------- Laptop ---------------------------------- */
+
+
+/* Laptop HiDPI*/
+@media only screen and (min-width: 1440px) and (max-width: 1919px) {
+	
+
+
+
+
+} /* Laptop HiDPI media query close */
+
+
+/*  ---------------------------------- Media Queries ---------------------------------- */
+/*  ---------------------------------- Imac 1920 x 1080 ---------------------------------- */
+
+@media only screen and (min-width: 1920px) and (max-width: 2080px){
+	
+
+
+
+}
+
+/*----------------------------------------------------------------------*/
+
