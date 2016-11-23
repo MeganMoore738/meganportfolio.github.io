@@ -144,7 +144,6 @@ ul.topnav li.icon {
 }
 
 
-
 @media screen and (max-width:680px) {
   ul.topnav li:not(:first-child) {display: none;}
   ul.topnav li.icon {
@@ -186,6 +185,7 @@ h3 {
 	margin-top: 150px;
 }
 
+/*--------------------------------- Burger menu ----------------------------------*/
 
 
 
@@ -204,20 +204,20 @@ h3 {
 }
 
 .aOne {
-	width: 450px;
+	width: 400px;
 	float: left;
 	display: block;
 }
 
 .aTwo{
-	width: 450px;
+	width: 400px;
 	float: left;
 	margin-left: 10px;
 	display: block;
 }
 
 .aThree {
-	width: 450px;
+	width: 400px;
 	float: left;
 	margin-top: 10px;
 	margin-left: 10px;
@@ -352,6 +352,7 @@ li a {
     font-family: 'Avenir';
     font-weight: bold;
 }
+
 
 .img2{
 	display: none;
@@ -520,20 +521,20 @@ footer {
 		}
 
 		.aOne {
-			width: 500px;
+			width: 450px;
 			float: left;
 			display: block;
 		}
 
 		.aTwo{
-			width: 500px;
+			width: 450px;
 			float: left;
 			margin-left: 10px;
 			display: block;
 		}
 
 		.aThree {
-			width: 500px;
+			width: 450px;
 			float: left;
 			margin-top: 10px;
 			margin-left: 10px;
@@ -630,20 +631,20 @@ footer {
 	}
 
 	.aOne {
-		width: 550px;
+		width: 500px;
 		float: left;
 		display: block;
 	}
 
 	.aTwo{
-		width: 550px;
+		width: 500px;
 		float: left;
 		margin-left: 10px;
 		display: block;
 	}
 
 	.aThree {
-		width: 550px;
+		width: 500px;
 		float: left;
 		margin-top: 10px;
 		margin-left: 10px;
@@ -1245,27 +1246,28 @@ footer {
 			display: block;
 			margin: 0 auto;
 		}
-		.aOne {
-			width: 400px;
-			float: left;
-			display: block;
-		}
+			.aOne {
+				width: 400px;
+				float: left;
+				display: block;
+				margin: 0 auto;
+				margin-bottom: 20px;
+			}
 
-		.aTwo{
-			width: 400px;
-			float: left;
-			margin-left: 10px;
-			display: block;
-		}
+			.aTwo{
+				width: 400px;
+				float: left;
+				display: block;
+				margin: 0 auto;
+				margin-bottom: 20px;
+			}
 
-		.aThree {
-			width: 400px;
-			float: left;
-			margin-top: 10px;
-			margin-left: 10px;
-			display: block;
-		}
-
+			.aThree {
+				width: 400px;
+				float: left;
+				display: block;
+				margin: 0 auto;
+			}
 
 
 
@@ -1323,28 +1325,27 @@ footer {
 				margin: 0 auto;
 			}
 
-			.aOne {
-				width: 500px;
-				float: left;
-				display: block;
-				margin: 0 auto;
-				margin-bottom: 20px;
-			}
+		.aOne {
+			width: 500px;
+			float: left;
+			display: block;
+		}
 
-			.aTwo{
-				width: 500px;
-				float: left;
-				display: block;
-				margin: 0 auto;
-				margin-bottom: 20px;
-			}
+		.aTwo{
+			width: 500px;
+			float: left;
+			margin-left: 10px;
+			display: block;
+		}
 
-			.aThree {
-				width: 500px;
-				float: left;
-				display: block;
-				margin: 0 auto;
-			}
+		.aThree {
+			width: 500px;
+			float: left;
+			margin-top: 10px;
+			margin-left: 10px;
+			display: block;
+		}
+
 }
 
 /*----------------------------------------------------------------------*/
