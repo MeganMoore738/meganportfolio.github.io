@@ -21,7 +21,7 @@ $("#home").click(function() {
 $("#about").click(function() {
     $('html, body').animate({
         scrollTop: $("#aboutme").offset().top
-    }, 200);
+    }, 1000);
 
     $(".navigation").find("a").removeClass("active");
     $(this).addClass("active");
@@ -32,7 +32,7 @@ $("#about").click(function() {
 $("#portfolio").click(function() {
     $('html, body').animate({
         scrollTop: $("#grid").offset().top
-    }, 200);
+    }, 1000);
 
     $(".navigation").find("a").removeClass("active");
     $(this).addClass("active");
@@ -43,7 +43,7 @@ $("#portfolio").click(function() {
 $("#showreel").click(function() {
     $('html, body').animate({
         scrollTop: $("#video").offset().top
-    }, 200);
+    }, 1000);
 
     $(".navigation").find("a").removeClass("active");
     $(this).addClass("active");
@@ -55,7 +55,7 @@ $("#showreel").click(function() {
 $("#contact").click(function() {
     $('html, body').animate({
         scrollTop: $("#contactform").offset().top
-    }, 200);
+    }, 1000);
 
     $(".navigation").find("a").removeClass("active");
     $(this).addClass("active");
