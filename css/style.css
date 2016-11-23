@@ -1311,6 +1311,33 @@ footer {
 			width: 80%;
 		}
 
+		.about {
+			width: 80%;
+			display: block;
+			margin: 0 auto;
+		}
+		.aOne {
+			width: 400px;
+			float: left;
+			display: block;
+		}
+
+		.aTwo{
+			width: 400px;
+			float: left;
+			margin-left: 10px;
+			display: block;
+		}
+
+		.aThree {
+			width: 400px;
+			float: left;
+			margin-top: 10px;
+			margin-left: 10px;
+			display: block;
+		}
+
+
 
 
 
